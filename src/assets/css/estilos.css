@@ -1,0 +1,124 @@
+.coluna {
+    border: 1px solid black
+}
+
+.cabecalho {
+    min-height: 100px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    background-image: url("../images/starW.webp");
+    background-size: cover;
+}
+
+.corpo {
+    min-height: 180px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.rodape {
+    text-align: center;
+    font-size: 12px;
+    color: rgb(90, 82, 82);
+}
+
+.menu {
+    padding: 20px;
+    width: 100%;
+    margin-top: 10px;
+    display: inline-block;
+    border: 1px;
+}
+
+.itemMenu {
+    float: left;
+    width: 100px;
+    border: 1px solid rgb(243, 121, 7);
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    text-align: center;
+    justify-content: space-around;
+    background-color: rgb(243, 121, 7);
+    color: black
+}
+
+.itemMenu:hover {
+    cursor: pointer;
+    background-color: rgb(102, 97, 97);
+}
+
+.home{
+    display: flex;
+    justify-content: space-between;
+}
+
+.films{
+    border: 1px;
+    width: 100px;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+    color: black
+}
+
+.starships{
+    border: 1px;
+    width: 100px;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+    color: black
+}
+
+.people{
+    border: 1px;
+    width: 100px;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+    color: black
+}
+
+.planets{
+    border: 1px;
+    width: 100px;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+    color: black
+}
+
+.species{
+    border: 1px;
+    border-radius: 10px;
+    margin-left: 25px;
+    color: black
+}
+
+.dev{
+    display:flex;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.foto{
+    width: 250px;
+    height: 300px;
+    margin-left: 240px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
