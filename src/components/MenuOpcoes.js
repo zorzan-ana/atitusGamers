@@ -36,7 +36,7 @@ export default function MenuOpcoes() {
                 <div className='itemMenu'>Sobre</div>
             </Link>
             <div className='itemMenu' onClick={logoff}>Logoff</div>
-
+            
         </div>
     )
 }

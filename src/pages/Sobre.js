@@ -13,37 +13,33 @@ import { IconButton } from '@mui/material'
 export default function Sobre(){
   return(
     <>
-   <Cabecalho/>
-   <MenuOpcoes/>
+      <Cabecalho/>
+      <MenuOpcoes/>
    
-    <div className='sobre'>
-     <h1 className='dev'>Ana Gabriela Zorzan</h1>
-     <img className='foto' src={fotoAna}/>
-    </div>
       
-    <IconButton>
-      <a href="https://github.com/zorzan-ana">    
-        <GitHubIcon/>
-      </a>
-    </IconButton>
+        <h1 className='dev'>Ana Gabriela Zorzan</h1>
+        <img className='foto' src={fotoAna}/>
 
-    <IconButton>
-      <a href="https://www.linkedin.com/in/ana-gabriela-zorzan/">    
-        <LinkedInIcon/>
-      </a>
-    </IconButton>
+        <div className='icons'>
+          <IconButton>
+            <a href="https://github.com/zorzan-ana">    
+            <GitHubIcon sx={{ fontSize: 35 }}/>
+            </a>
+          </IconButton>
 
-    <IconButton>
-      <a href="https://instagram.com/zorzan_anna">    
-        <InstagramIcon/>
-      </a>
-    </IconButton>
-  
-    <div>
+          <IconButton>
+            <a href="https://www.linkedin.com/in/ana-gabriela-zorzan/">    
+            <LinkedInIcon sx={{ fontSize: 35 }}/>
+            </a>
+          </IconButton>
 
-    </div>
-  <Rodape/>
-  </>
+          <IconButton>
+            <a href="https://instagram.com/zorzan_anna">    
+            <InstagramIcon sx={{ fontSize: 30  }}/>
+            </a>
+          </IconButton>
+        </div>
+      <Rodape/>
+    </>
   )
-  
 }

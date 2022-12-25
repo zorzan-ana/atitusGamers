@@ -3,7 +3,7 @@ import React, { useLayoutEffect, useState } from 'react'
 import Cabecalho from '../components/Cabecalho'
 import Rodape from '../components/Rodape'
 import MenuOpcoes from '../components/MenuOpcoes'
-import { pegarGamers, deleteGamer } from '../services/BancoService'
+import { pegarDuvidas, deleteDuvidas } from '../services/BancoService'
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -13,27 +13,27 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import DeleteIcon from '@mui/icons-material/Delete';
 
-export default function Home(props) {
+export default function Menu(props) {
 
-  const [gamers, setGamers] = useState([])
+  const [duvidas, setDuvidas] = useState([])
 
-  const buscarGamers = () => {
-    pegarGamers()
-      .then((dados) => setGamers(dados))
+  const buscarDuvidas = () => {
+    pegarDuvidas()
+      .then((dados) => setDuvidas(dados))
       .catch((e) => alert(e))
   }
 
   useLayoutEffect(() => {
 
-    buscarGamers()
+    buscarDuvidas()
   }, [])
 
-  const deletarGamer = async (id) => {
+  const deletarDuvidas = async (id) => {
 
     try {
-      await deleteGamer(id)
+      await deleteDuvidas(id)
       alert("Dados Excluídos")
-      buscarGamers()
+      buscarDuvidas()
 
     } catch (error) {
       alert(error)
@@ -57,14 +57,13 @@ export default function Home(props) {
                   <TableRow>
                     <TableCell>ID</TableCell>
                     <TableCell align="right">Nome</TableCell>
-                    <TableCell align="right">E-mail</TableCell>
                     <TableCell align="right">Telefone</TableCell>
-                    <TableCell align="right">Rede Social</TableCell>
+                    <TableCell align="right">Dúvida</TableCell>
                     <TableCell align="right">Opções</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  {gamers.map((row) => (
+                  {duvidas.map((row) => (
                     <TableRow
                       key={row.id}
                       sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
@@ -75,11 +74,10 @@ export default function Home(props) {
                       <TableCell component="th" scope="row">
                         {row.nome}
                       </TableCell>
-                      <TableCell align="right">{row.email}</TableCell>
                       <TableCell align="right">{row.telefone}</TableCell>
-                      <TableCell align="right">{row.rede}</TableCell>
+                      <TableCell align="right">{row.duvida}</TableCell>
                       <TableCell align="right">
-                        <IconButton color="primary" onClick={() => deletarGamer(row.id)}>
+                        <IconButton color="primary" onClick={() => deletarDuvidas(row.id)}>
                           <DeleteIcon />
                         </IconButton>
 

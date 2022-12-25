@@ -59,7 +59,7 @@ export default function Login(props) {
 
 
   return (
-    <Grid container style={{ padding: 10 }}>
+    <Grid container style={{ padding: 25 }}>
       <Grid item xs={12}>
         <div style={{ textAlign: "center" }}>
           <h1>Sejam bem-vindos ao Mundo Star Wars</h1>
@@ -67,8 +67,8 @@ export default function Login(props) {
         </div>
       </Grid>
       <Grid item md={4} xs={12} sm={12}></Grid>
-      <Grid item md={4} xs={12} sm={12} style={{ backgroundColor: "white", padding: 10, borderRadius: 10 }}>
-        <div style={{ marginBottom: 10 }}>
+      <Grid item md={4} xs={12} sm={12} style={{ backgroundColor: "white", padding: 41, borderRadius: 10 }}>
+        <div style={{ marginBottom: 25 }}>
           <TextField
             label="E-mail"
             fullWidth={true}

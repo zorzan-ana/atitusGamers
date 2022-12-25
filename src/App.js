@@ -5,15 +5,15 @@ import {
 } from "react-router-dom";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
-import Duvidas from "./pages/Duvidas";
 import Sobre from "./pages/Sobre";
 import Films from "./pages/Films"
 import Starships from "./pages/Starships";
 import People from "./pages/People";
 import Planets from "./pages/Planets";
 import Species from "./pages/Species";
+import Duvidas from "./pages/Duvidas";
 import './assets/css/estilos.css'
-import Cadastro from "./pages/Cadastro";
+
 
 function App() {
 
@@ -32,10 +32,6 @@ function App() {
     {
       path: "/home",
       element: login ? <Home /> : <Login verificarLogin={verificarLogin} />,
-    },
-    {
-      path: "/cadastro",
-      element: login ? <Cadastro /> : <Login verificarLogin={verificarLogin} />,
     },
     {
       path: "/duvidas",
