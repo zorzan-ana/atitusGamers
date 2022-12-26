@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.094260d3.css",
-    "main.js": "/static/js/main.a1ba7292.js",
+    "main.css": "/static/css/main.336a742e.css",
+    "main.js": "/static/js/main.47ad116b.js",
     "static/js/787.beab8cbd.chunk.js": "/static/js/787.beab8cbd.chunk.js",
-    "static/media/back.jpg": "/static/media/back.cdd446c88c42246098ca.jpg",
+    "static/media/ana_zorzan.jpg": "/static/media/ana_zorzan.2d10d2dff6d31303614e.jpg",
+    "static/media/starW.webp": "/static/media/starW.5b3338cb2b2ad4807aca.webp",
     "index.html": "/index.html",
-    "main.094260d3.css.map": "/static/css/main.094260d3.css.map",
-    "main.a1ba7292.js.map": "/static/js/main.a1ba7292.js.map",
+    "main.336a742e.css.map": "/static/css/main.336a742e.css.map",
+    "main.47ad116b.js.map": "/static/js/main.47ad116b.js.map",
     "787.beab8cbd.chunk.js.map": "/static/js/787.beab8cbd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.094260d3.css",
-    "static/js/main.a1ba7292.js"
+    "static/css/main.336a742e.css",
+    "static/js/main.47ad116b.js"
   ]
 }

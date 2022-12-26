@@ -27,13 +27,12 @@ export default function Films(){
         <>
         <Cabecalho title="" message=""/>
             <MenuOpcoes/>
-            {msg}
-            {films.map((item, chave) =>
-            <div className='films' key={chave}>
+                {msg}
+                {films.map((item, chave) =>
+                <div className='films' key={chave}>
                 {item.title}
-            </div>
-            )}
-        
+                </div>
+                )}
             <Rodape/>
          
         </>
